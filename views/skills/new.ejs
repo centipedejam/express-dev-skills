@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+    <div class="container">
+        <h1 class="mt-5 text-center">Add New Skill</h1>
+        <form action="/skills" method="POST">
+            <div class="mb-3">
+                <label for="skill" class="form-label">Skill</label>
+                <input type="text" class="form-control" id="skill" name="skill">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description" name="description">
+            </div>
+            <div class="mb-3">
+                <label for="url" class="form-label">Image Url</label>
+                <input type="text" class="form-control" id="url" name="url">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <%- include('../partials/footer') %>
